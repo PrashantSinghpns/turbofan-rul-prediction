@@ -1,0 +1,25 @@
+# Local environments, caches and notebooks used as backups.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.backup*.ipynb
+*.before-simplify*.ipynb
+# Keep raw data and generated reruns outside the published benchmark.
+data/train/
+data/test/
+data/rul/
+results/cleaned_fd001_run/
+results/example_predictions.csv
+# Local settings and credentials.
+.env
+.env.*
+.vscode/
+.local_backups/
+requirements.txt.txt
+# Older separate-model exports are superseded by the complete pipeline.
+results/final_linear_regression_model.pkl
+results/standard_scaler.pkl
+.DS_Store
+Thumbs.db

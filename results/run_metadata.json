@@ -1,0 +1,82 @@
+{
+  "dataset": "NASA C-MAPSS FD001",
+  "source": "https://www.nasa.gov/intelligent-systems-division/discovery-and-systems-health/pcoe/pcoe-data-set-repository/",
+  "checked_at": "2026-10-07",
+  "selected_model": "Linear Regression",
+  "training_records": 20631,
+  "training_engines": 80,
+  "validation_engines": 20,
+  "engine_overlap": 0,
+  "official_test_engines": 100,
+  "raw_features": [
+    "time_cycles",
+    "operational_setting_1",
+    "operational_setting_2",
+    "operational_setting_3",
+    "sensor_1",
+    "sensor_2",
+    "sensor_3",
+    "sensor_4",
+    "sensor_5",
+    "sensor_6",
+    "sensor_7",
+    "sensor_8",
+    "sensor_9",
+    "sensor_10",
+    "sensor_11",
+    "sensor_12",
+    "sensor_13",
+    "sensor_14",
+    "sensor_15",
+    "sensor_16",
+    "sensor_17",
+    "sensor_18",
+    "sensor_19",
+    "sensor_20",
+    "sensor_21"
+  ],
+  "retained_features": [
+    "time_cycles",
+    "operational_setting_1",
+    "operational_setting_2",
+    "sensor_2",
+    "sensor_3",
+    "sensor_4",
+    "sensor_6",
+    "sensor_7",
+    "sensor_8",
+    "sensor_9",
+    "sensor_11",
+    "sensor_12",
+    "sensor_13",
+    "sensor_14",
+    "sensor_15",
+    "sensor_17",
+    "sensor_20",
+    "sensor_21"
+  ],
+  "rul_target": "uncapped final training cycle minus current cycle",
+  "random_state": 42,
+  "ridge_best_parameters": {
+    "ridge__alpha": 100
+  },
+  "test_metrics": {
+    "Model": "Linear Regression",
+    "MAE": 25.975172458159623,
+    "RMSE": 31.25047411763997,
+    "R2": 0.4344725666736585
+  },
+  "python": "3.14.6",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "scipy": "1.18.0",
+    "scikit-learn": "1.9.0",
+    "joblib": "1.5.3"
+  },
+  "dataset_sha256": {
+    "train_FD001.txt": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+    "test_FD001.txt": "3cda7109ce17bafb5443f2ac926cfcf88154b941b8c4cf95eb55d1ddd6f52851",
+    "RUL_FD001.txt": "a19c8ec94931949d0485bdc35118206e9c81c4547b422efb9cf86f4ceddbceca"
+  }
+}
